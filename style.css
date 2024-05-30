@@ -1,0 +1,252 @@
+*{
+    margin: 0px 0px;
+}
+body{margin: 0px 5%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px; 
+}
+
+header{
+    width: 100%;
+    margin: 1% 0%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 2% 0%;
+}
+
+.flexcont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     justify-content:center;
+}
+html{
+  background-image: url(image/cat1.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100%;
+}
+.generalCont > div.item1{
+    flex: 1;
+    width: 100%;
+    min-height: 150px;
+    padding: 1% 1%;
+}
+.generalCont > div.item2{
+    flex: 1;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    align-content: center;
+    
+}
+nav > div.menu{
+    width: 100%;
+    display: none;
+}
+img.cent{margin-left: auto;
+margin-right: auto;
+display: block;
+max-width: 60%;}
+#moreText{
+    display: none;
+    
+}
+#moreLit{
+    color: brown;
+    cursor: pointer;
+}
+header h1{
+  margin: 1%;
+  font-size: 50px;
+  text-align: center;
+  color: indianred;
+  text-shadow: 1px 1px black;
+}
+.reklam{
+    flex: 0 1 20%;
+    flex-direction: row;
+    background-color: forestgreen;
+    height: 600px;
+    width: 120px;
+  }
+
+@keyframes imgChange {
+  10% {
+       background-image: url(img/baner/1.png)
+  }
+      10% {
+              background-image: url(img/baner/2.png);
+  }
+      10% {
+              background-color: red;
+  }
+      10% {
+              background-image: url(img/baner/4.png);
+  }
+      10% {
+}};
+
+#buttonImg{
+    max-width: 1%;
+    margin-left: auto;
+margin-right: auto;
+}
+#buttonM{
+    max-width: 3%;
+    margin: 0.5%;
+    cursor: pointer;
+}
+nav{
+  /* width: 100%; */
+  margin: 1% 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+.soc{
+max-width: 9%;
+margin: 0% 0% 1% 1%;
+}
+li{ list-style-type: none;}
+a{
+font-size: 1vw;
+ text-decoration: none;}
+footer > div.fCont{width: 50%;}
+footer > div.fCont2{width: 50%; flex: 1;
+text-align: end;}
+p.foote{font-size: 1.5vw;
+text-shadow: 0.04vw 0.04vw 0.04vw black;}
+
+#notMoreLit{display: none;
+  cursor: pointer;
+color: brown;}
+.text{font-size: 1.5vw;
+color: black;
+text-shadow: 0.04vw 0.04vw 0.04vw black;}
+.generalCont{
+display:flex;
+flex:0 1 75%;
+flex-wrap:wrap;
+flex-direction:row;
+align-content:stretch;
+}
+.carousel {
+  position: relative;
+  width: 398px;
+  padding: 10px 40px;
+  border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.carousel img {
+  width: 130px;
+  height: 130px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+/*  background: #ddd;*/
+  border-radius: 15px;
+/*  border: 1px solid;*/
+  font-size: 24px;
+  line-height: 24px;
+/*  color: #444;*/
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+/*  background: #ccc;*/
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 390px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+
+
+#slider{
+    overflow: hidden;
+    width: 160px;
+    height: 600px;
+    border: 2px solid rebeccapurple;
+    margin: 0 auto;
+    background-image: url(image/slon1.png);
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 5s slider infinite;
+}
+#slider figure img
+{
+    float: left;
+    width: 160px;
+}
+
+@keyframes slider
+{
+    0% { left: 0; }
+    40% { left: -100%; }
+    60% { left: -200%; }
+    100% { left: -300%; }
+
+}
+.foote{
+    margin-right: 2%;
+}
+.soc{
+vertical-align: middle;
+}
+.menush{
+    background-color: aqua;
+}
